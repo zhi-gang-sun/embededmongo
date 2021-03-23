@@ -20,8 +20,8 @@ public class MongoDemoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Product product = new Product();
 
-		product.setName("mac");
-		product.setPrirce(2000);
+		product.setName("thinkpad");
+		product.setPrice(1000);
 
 		Product result = repo.save(product);
 

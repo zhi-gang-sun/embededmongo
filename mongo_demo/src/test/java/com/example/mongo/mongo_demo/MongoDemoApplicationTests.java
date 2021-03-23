@@ -2,8 +2,6 @@ package com.example.mongo.mongo_demo;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import com.example.mongo.mongo_demo.*;
-
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +19,7 @@ class MongoDemoApplicationTests {
 	public void testSave(){
 		Product product =  new Product();
 		product.setName("mac pro");
-		product.setPrirce(4000);
+		product.setPrice(4000);
 
 		Product result = repo.save(product);
 		assertNotNull(result);

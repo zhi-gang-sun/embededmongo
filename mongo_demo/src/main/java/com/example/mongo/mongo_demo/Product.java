@@ -24,13 +24,15 @@ public class Product {
         this.name = name;
     }
 
-    public float getPrirce() {
-        return this.prirce;
-    }
 
-    public void setPrirce(float prirce) {
-        this.prirce = prirce;
-    }
     private String name;
-    private float prirce;
+    private float price;
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
 }
