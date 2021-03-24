@@ -1,5 +1,7 @@
 package com.example.mongo.mongo_demo;
 
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,9 +21,10 @@ public class MongoDemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Product product = new Product();
-
-		product.setName("thinkpad");
-		product.setPrice(1000);
+		
+		UUID id =  UUID.randomUUID();
+		product.setName(id.toString());
+		product.setPrice(2000);
 
 		Product result = repo.save(product);
 
