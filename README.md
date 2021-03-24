@@ -1,9 +1,12 @@
-# embededmongo
-Use embeded mongodb in spring boot
+# mongoDB Demo
 
-Comment out the properties in Application.properties file to use embeded mongodb.
+Comment out the properties in Application.properties file to use embeded mongodb:
 
-Comment out below in pom.xml to use external mongodb.
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=27017
+spring.data.mongodb.database=springbootproject
+
+Comment out below in pom.xml and keep the properties in Application.properties to use external mongodb:
 		<dependency>
 			<groupId>de.flapdoodle.embed</groupId>
 			<artifactId>de.flapdoodle.embed.mongo</artifactId>
